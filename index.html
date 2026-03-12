@@ -40,21 +40,19 @@
     </nav>
 <section class="hero">
     <div class="hero-content">
-        <h1>I am Marielle Bahuyo</h1>
-
-        <h1 class="font-sora text-6xl font-bold text-white tracking-tight">
-              I am <span class="text-brandPurple">Marielle Bahuyo</span>
+        <h1 class="font-sora text-7xl font-bold text-white tracking-tight">
+              I am <span class="text-brandPurple font-bold">Marielle Bahuyo</span>
         </h1>
-        <p>3rd Yr Computer Engineering Student @ PUP - Manila</p>
-        <p>Specializing in Networking, focusing on building scalable cloud-native projects</p>
-        <p>networking solutions, with a strong focus on bridging the gap between technical</p>
-        <p>execution and community leadership.</p>
-        <div class="hero-btns-socials">
-    <button class="btn-cv">Download CV</button>
+        <p class="font-inter text-gray-400 text-lg mb-8 max-w-xl">3rd Yr Computer Engineering Student @ PUP - Manila</p>
+        <p class="font-inter text-gray-400 text-lg mt-6 max-w-2xl leading-relaxed">Specializing in Networking, focusing on building scalable cloud-native projects<br>networking solutions, with a strong focus on bridging the gap between technical execution and community leadership.</p>
+        <div class="hero-btns-socials flex items-center gap-6 mt-10">
+    <button class="btn-cv px-8 py-3 border-2 border-[#8750f7] text-[#8750f7] rounded-full font-semibold hover:bg-[#8750f7] hover:text-white transition-all duration-300">
+        Download CV
+    </button>
     
-    <div class="social-links-text">
-        <a href="https://github.com/vanillamaye" target="_blank" class="social-btn">GH</a>
-        <a href="https://www.linkedin.com/in/marielleloisbahuyo/" target="_blank" class="social-btn">LI</a>
+    <div class="social-links-text flex gap-4">
+        <a href="https://github.com/vanillamaye" target="_blank" class="w-12 h-12 border border-[#8750f7] rounded-full flex items-center justify-center text-[#8750f7] hover:bg-[#8750f7] hover:text-white transition-all">GH</a>
+        <a href="https://www.linkedin.com/in/marielleloisbahuyo/" target="_blank" class="w-12 h-12 border border-[#8750f7] rounded-full flex items-center justify-center text-[#8750f7] hover:bg-[#8750f7] hover:text-white transition-all">LI</a>
     </div>
 </div>
         </div>
@@ -72,60 +70,76 @@
 </div>
 </section>
 
-<section id="services" class="services-section">
-    <h2 class="section-title">My Quality Services</h2>
-    <p class="section-subtitle">Turning complex cloud architecture into seamless user experiences.</p>
-    
-
- <div class="service-item">
-        <div class="service-info">
-            <span class="service-number">01</span>
-            <h2 class="service-name">Cloud-Native Development</h2>
-        </div>
-        <p class="service-description">
-            Building serverless backends with AWS Lambda and CLoudFront for low-latency global delivery.
+<section id="services" class="py-20 bg-[#0f0715] px-[10%]">
+    <div class="mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#8750f7] to-white font-sora mb-6">
+            My Quality Services
+        </h2>
+        <p class="text-gray-300 font-inter max-w-xl leading-relaxed">
+            Turning complex cloud architecture into seamless user experiences.
         </p>
-        <div class="service-arrow">↘</div>
     </div>
 
-    <div class="service-item">
-        <div class="service-info">
-            <span class="service-number">02</span>
-            <h2 class="service-name">Full-Stack Web Dev</h2>
-        </div>
-        <p class="service-description">
-            Creating responsive applications using modern frameworks like Vue 3 and Vite with Integrated API logic
-        </p>
-        <div class="service-arrow">↘</div>
-    </div>
-
-     <div class="service-item">
-        <div class="service-info">
-            <span class="service-number">03</span>
-            <h2 class="service-name">Database Architecture</h2>
-        </div>  
-         <p class="service-description">
-            Optimizing data persistence layers using Amazon RDS for relational data and DynamoDB for high-speed logging. 
-        </p>
-        <div class="service-arrow">↘</div>
-    </div>
-
-   <div class="service-item">
-            <div class="service-info">
-                <span class="service-number">04</span>
-                <h2 class="service-name">IT System Servicing</h2>
+<div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-10 border-b border-gray-800 hover:bg-gradient-to-r hover:from-[#1a0b2e] hover:to-transparent transition-all duration-500 cursor-pointer px-4">
+            <div class="flex items-center gap-8 mb-4 md:mb-0">
+                <span class="text-3xl font-bold text-white group-hover:text-[#8750f7] transition-colors">01</span>
+                <h3 class="text-2xl font-bold text-white font-sora">Cloud-Native Development</h3>
             </div>
-            <p class="service-description">
-                Certified expertise in hardware assembly, networking (CIDR), and mechatronics system troubleshooting.
+            <p class="text-gray-400 md:w-1/2 font-inter leading-relaxed">
+                Building serverless backends with AWS Lambda and CloudFront for low-latency global delivery.
             </p>
-            <div class="service-arrow">↘</div>
+            <div class="hidden md:block text-[#8750f7] text-2xl group-hover:rotate-45 transition-transform">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
         </div>
-    </div>
-</section>
+
+<div class="flex flex-col">
+        <div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-10 border-b border-gray-800 hover:bg-gradient-to-r hover:from-[#1a0b2e] hover:to-transparent transition-all duration-500 cursor-pointer px-4">
+            <div class="flex items-center gap-8 mb-4 md:mb-0">
+                <span class="text-3xl font-bold text-white group-hover:text-[#8750f7] transition-colors">02</span>
+                <h3 class="text-2xl font-bold text-white font-sora">Full-Stack Web Development</h3>
+            </div>
+            <p class="text-gray-400 md:w-1/2 font-inter leading-relaxed">
+                Creating responsive applications using modern frameworks like Vue 3 and Vite with Integrated API logic
+            </p>
+            <div class="hidden md:block text-[#8750f7] text-2xl group-hover:rotate-45 transition-transform">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+
+<div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-10 border-b border-gray-800 hover:bg-gradient-to-r hover:from-[#1a0b2e] hover:to-transparent transition-all duration-500 cursor-pointer px-4">
+            <div class="flex items-center gap-8 mb-4 md:mb-0">
+                <span class="text-3xl font-bold text-white group-hover:text-[#8750f7] transition-colors">03</span>
+                <h3 class="text-2xl font-bold text-white font-sora">Database Architecture</h3>
+            </div>
+            <p class="text-gray-400 md:w-1/2 font-inter leading-relaxed">
+                Optimizing data persistence layers using Amazon RDS for relational data and DynamoDB for high-speed logging.
+            </p>
+            <div class="hidden md:block text-[#8750f7] text-2xl group-hover:rotate-45 transition-transform">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+
+
+<div class="flex flex-col">
+        <div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-10 border-b border-gray-800 hover:bg-gradient-to-r hover:from-[#1a0b2e] hover:to-transparent transition-all duration-500 cursor-pointer px-4">
+            <div class="flex items-center gap-8 mb-4 md:mb-0">
+                <span class="text-3xl font-bold text-white group-hover:text-[#8750f7] transition-colors">04</span>
+                <h3 class="text-2xl font-bold text-white font-sora">IT System Servicing </h3>
+            </div>
+            <p class="text-gray-400 md:w-1/2 font-inter leading-relaxed">
+             Certified expertise in hardware assembly, networking (CIDR), and mechatronics system troubleshooting.
+            </p>
+            <div class="hidden md:block text-[#8750f7] text-2xl group-hover:rotate-45 transition-transform">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+
 
 <section id="works" class="works-section">
-    <h2 class="section-title">My Recent Works</h2>
-
+  <h2 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#8750f7] to-white font-sora mb-6">
+            My Recent works
+        </h2>
     <div class="works-grid">
         <div class="work-card">
         <div class="work-img">
