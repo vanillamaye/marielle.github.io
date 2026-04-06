@@ -1,351 +1,252 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marielle Lois | Portfolio</title>
-<script src="https://cdn.tailwindcss.com"></script>
-
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brandPurple: '#8750f7',
-            darkNavy: '#0f0715',
-            cardNavy: '#1a0b2e',
-          },
-          fontFamily: {
-            sora: ['Sora', 'sans-serif'],
-            inter: ['Inter', 'sans-serif'],
-          }
+    <title>Marielle Lois | Software & Cloud Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
         }
-      }
-    }
-</script>
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-   </head>
-<body>
-   <nav class="navbar">
-    <header class="card profile">
-        <div class="logo">mariellelois9@gmail.com</div>
-        <ul class="nav-links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#skills">Skills</a></li>
-        </ul>
-    </header> 
+</head>
+<body class="bg-white text-slate-900 antialiased font-sans">
+    <nav class="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur">
+        <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 md:px-8">
+            <a href="#" class="text-sm font-semibold text-slate-800">mariellelois9@gmail.com</a>
+            <ul class="flex items-center gap-6 text-sm text-slate-600">
+                <li><a href="#about" class="hover:text-slate-900 transition-colors">About</a></li>
+                <li><a href="#projects" class="hover:text-slate-900 transition-colors">Projects</a></li>
+                <li><a href="#experience" class="hover:text-slate-900 transition-colors">Experience</a></li>
+                <li><a href="#stack" class="hover:text-slate-900 transition-colors">Tech Stack</a></li>
+            </ul>
+        </div>
     </nav>
-<section class="hero">
-    <div class="hero-content">
-        <h1 class="font-sora text-7xl font-bold text-white tracking-tight">
-              I am <span class="text-brandPurple font-bold">Marielle Bahuyo</span>
-        </h1>
-        <p class="font-inter text-gray-400 text-lg mb-8 max-w-xl">3rd Yr Computer Engineering Student @ PUP - Manila</p>
-        <p class="font-inter text-gray-400 text-lg mt-6 max-w-2xl leading-relaxed">Specializing in Networking, focusing on building scalable cloud-native projects<br>networking solutions, with a strong focus on bridging the gap between technical execution and community leadership.</p>
-        <div class="hero-btns-socials flex items-center gap-6 mt-10">
-    <button class="btn-cv px-8 py-3 border-2 border-[#8750f7] text-[#8750f7] rounded-full font-semibold hover:bg-[#8750f7] hover:text-white transition-all duration-300">
-        Download CV
-    </button>
-    
-    <div class="social-links-text flex gap-4">
-        <a href="https://github.com/vanillamaye" target="_blank" class="w-12 h-12 border border-[#8750f7] rounded-full flex items-center justify-center text-[#8750f7] hover:bg-[#8750f7] hover:text-white transition-all">GH</a>
-        <a href="https://www.linkedin.com/in/marielleloisbahuyo/" target="_blank" class="w-12 h-12 border border-[#8750f7] rounded-full flex items-center justify-center text-[#8750f7] hover:bg-[#8750f7] hover:text-white transition-all">LI</a>
-    </div>
-</div>
-        </div>
-    </div>
 
-    <div class="hero-image">
-        <img src="images/pic.jpg" alt="Marielle AWS Profile">
-    </div>
-</section>
-
-<div class="stats">
-    <div class="stat-item"><span>10+</span>Experiences</div>
-    <div class="stat-item"><span>3</span>Projects Completed</div>
-    <div class="stat-item"><span>2</span>Certifications</div>
-</div>
-</section>
-
-<!--MY QUALITY-->
-<section id="services" class="py-20 bg-[#0f0715] px-[10%]">
-    <div class="mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#8750f7] to-white font-sora mb-6">
-            My Quality Services
-        </h2>
-        <p class="text-gray-300 font-inter max-w-xl leading-relaxed">
-            Turning complex cloud architecture into seamless user experiences.
-        </p>
-    </div>
-
-<div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-10 border-b border-gray-800 hover:bg-gradient-to-r hover:from-[#1a0b2e] hover:to-transparent transition-all duration-500 cursor-pointer px-4">
-    
-    <div class="flex items-center gap-8 w-full md:w-[450px] shrink-0">
-        <span class="text-3xl font-bold text-[#8750f7]">01</span>
-        <h3 class="text-2xl font-bold text-white font-sora">Cloud-Native Development</h3>
-    </div>
-
-    <div class="flex-1 mt-4 md:mt-0">
-        <p class="text-gray-400 font-inter leading-relaxed text-left text-base md:text-lg">
-            Building serverless backends with AWS Lambda and CloudFront for low-latency global delivery.
-        </p>
-    </div>
-
-</div>
-<div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-10 border-b border-gray-800 hover:bg-gradient-to-r hover:from-[#1a0b2e] hover:to-transparent transition-all duration-500 cursor-pointer px-4">
-    
-    <div class="flex items-center gap-8 w-full md:w-[450px] shrink-0">
-        <span class="text-3xl font-bold text-[#8750f7]">02</span>
-        <h3 class="text-2xl font-bold text-white font-sora">Full-Stack Web Development</h3>
-    </div>
-
-    <div class="flex-1 mt-4 md:mt-0">
-        <p class="text-gray-400 font-inter leading-relaxed text-left text-base md:text-lg">
-              Creating responsive applications using modern frameworks like Vue 3 and Vite with Integrated API logic
-        </p>
-    </div>
-
-</div>
-
-<div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-10 border-b border-gray-800 hover:bg-gradient-to-r hover:from-[#1a0b2e] hover:to-transparent transition-all duration-500 cursor-pointer px-4">
-    
-    <div class="flex items-center gap-8 w-full md:w-[450px] shrink-0">
-        <span class="text-3xl font-bold text-[#8750f7]">03</span>
-        <h3 class="text-2xl font-bold text-white font-sora">Database Architecture</h3>
-    </div>
-
-    <div class="flex-1 mt-4 md:mt-0">
-        <p class="text-gray-400 font-inter leading-relaxed text-left text-base md:text-lg">
-             Optimizing data persistence layers using Amazon RDS for relational data and DynamoDB for high-speed logging.
-        </p>
-    </div>
-
-</div>
-
-<div class="group flex flex-col md:flex-row justify-between items-start md:items-center py-10 border-b border-gray-800 hover:bg-gradient-to-r hover:from-[#1a0b2e] hover:to-transparent transition-all duration-500 cursor-pointer px-4">
-    
-    <div class="flex items-center gap-8 w-full md:w-[450px] shrink-0">
-        <span class="text-3xl font-bold text-[#8750f7]">04</span>
-        <h3 class="text-2xl font-bold text-white font-sora">IT System Servicing</h3>
-    </div>
-
-    <div class="flex-1 mt-4 md:mt-0">
-        <p class="text-gray-400 font-inter leading-relaxed text-left text-base md:text-lg">
-            Certified expertise in hardware assembly, networking (CIDR), and mechatronics system troubleshooting. 
-        </p>
-    </div>
-
-</div>
-
-<!--MY PROJECTS-->
-
-<section id="works" class="py-20 bg-[#0f0715] px-[10%]">
-    <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold text-white font-sora mb-4">My Recent Works</h2>
-        <p class="text-gray-400 font-inter max-w-2xl mx-auto">
-            A showcase of my projects in Cloud Computing, Full-Stack Development, and Mechatronics.
-        </p>
-    </div>
-  
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        
-        <div class="group relative overflow-hidden rounded-[30px] bg-[#1a0b2e] border border-gray-800 transition-all duration-500 hover:border-[#8750f7]">
-            <div class="p-6">
-                  <a href="https://github.com/vanillamaye/serverless-appointment-system">
-                <img src="images/cloud.jpg" alt="Work 1" class="w-full h-auto rounded-[20px] transition-transform duration-500 group-hover:scale-105">
-                 
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-[#8750f7]/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
-                <h3 class="text-2xl font-bold text-white font-sora">Serverless Appointment System</h3>
-                <p class="text-white/80 font-inter text-sm mt-2">AWS Lambda | DynamoDB | API Gateway</p>
-             </div>
-            </a>
-        </div>
-        <div class="group relative overflow-hidden rounded-[30px] bg-[#1a0b2e] border border-gray-800 transition-all duration-500 hover:border-[#8750f7]">
-            <div class="p-6">
-                <img src="images/kiro.jpg" alt="Work 1" class="w-full h-auto rounded-[20px] transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-[#8750f7]/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
-                <h3 class="text-2xl font-bold text-white font-sora">Travel Expense Tracker</h3>
-                <p class="text-white/80 font-inter text-sm mt-2">Vue 3 + Vite | AI-driven feature for modular front-end design.</p>
-            </div>
-        </div>
-
-        <div class="group relative overflow-hidden rounded-[30px] bg-[#1a0b2e] border border-gray-800 transition-all duration-500 hover:border-[#8750f7]">
-            <div class="p-6">
-                <img src="images/webtech.jpg" alt="Work 1" class="w-full h-auto rounded-[20px] transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-[#8750f7]/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
-                <h3 class="text-2xl font-bold text-white font-sora">E-Commerce Web Application</h3>
-                <p class="text-white/80 font-inter text-sm mt-2">Full-Stack site using PHP and MySQL.</p>
-            </div>
-
-        </div> <div class="group relative overflow-hidden rounded-[30px] bg-[#1a0b2e] border border-gray-800 transition-all duration-500 hover:border-[#8750f7]">
-            <div class="p-6">
-                <img src="images/thesis.png" alt="Work 1" class="w-full h-auto rounded-[20px] transition-transform duration-500 group-hover:scale-105">
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-[#8750f7]/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-10">
-                <h3 class="text-2xl font-bold text-white font-sora">Smart water Dispenser/h3>
-                <p class="text-white/80 font-inter text-sm mt-2">A refillable station with a coin payment system.</p>
-            </div>
-        </div>
-    </div>
-    </section>
-
-
-    <!--MY EXPERIENCE-->
-<section id="resume" class="py-20 bg-[#0f0715] px-[10%]">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-        
-        <div>
-            <h2 class="text-4xl font-bold text-[#8750f7] font-sora mb-10 flex items-center gap-4">
-                <i class="fa-solid fa-briefcase"></i> My Experience
-            </h2>
-            
-            <div class="space-y-6">
-                <div class="p-8 rounded-[24px] bg-[#1a0b2e] border border-transparent hover:border-[#8750f7] transition-all group">
-                    <span class="text-[#8750f7] font-bold text-sm">2025 - Present</span>
-                    <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-[#8750f7] transition-colors">Project Management Associate</h3>
-                    <p class="text-gray-400 mt-1">Google Developer Groups on Campus PUP</p>
+    <main class="mx-auto w-full max-w-5xl px-5 md:px-7">
+        <section class="py-8 md:py-10">
+            <div class="max-w-3xl">
+                <p class="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-slate-500">Software & Cloud Engineer Portfolio</p>
+                <div class="flex items-center gap-4">
+                    <img src="images/pic.jpg" alt="Marielle profile avatar" class="h-16 w-16 rounded-full border border-slate-200 object-cover md:h-20 md:w-20">
+                    <h1 class="tracking-tighter text-3xl font-extrabold leading-tight text-slate-900 md:text-5xl">
+                        Marielle Lois P.Bahuyo
+                    </h1>
                 </div>
-
-                <div class="p-8 rounded-[24px] bg-[#1a0b2e] border border-transparent hover:border-[#8750f7] transition-all group">
-                    <span class="text-[#8750f7] font-bold text-sm">2024 - 2025</span>
-                    <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-[#8750f7]">Program Analyst (Cloud Solutions)</h3>
-                    <p class="text-gray-400 mt-1">GDG on Campus PUP</p>
+                <p class="mt-3 max-w-2xl text-base text-slate-600 md:text-lg">
+                    Third-year Computer Engineering Technology student focused on cloud engineering, full-stack development, and operationally reliable systems.
+                </p>
+                <div class="mt-4 flex flex-wrap items-center gap-2">
+                    <a href="#" class="rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-semibold text-slate-800 transition hover:border-slate-300 hover:bg-slate-50">Download CV</a>
+                    <a href="https://github.com/vanillamaye" target="_blank" class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-300">GitHub</a>
+                    <a href="https://www.linkedin.com/in/marielleloisbahuyo/" target="_blank" class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-300">LinkedIn</a>
                 </div>
-
-                <div class="p-8 rounded-[24px] bg-[#1a0b2e] border border-transparent hover:border-[#8750f7] transition-all group">
-                    <span class="text-[#8750f7] font-bold text-sm">2025 - Present</span>
-                    <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-[#8750f7]">Operations Team</h3>
-                    <p class="text-gray-400 mt-1">AWS Cloud Club PUP</p>
+                <div class="mt-4 grid gap-2 sm:grid-cols-3">
+                    <div class="rounded-xl border border-slate-200 bg-slate-50/50 p-3.5 shadow-sm transition-shadow hover:shadow-md">
+                        <p class="tracking-tighter text-xl font-bold text-slate-900">10+</p>
+                        <p class="text-xs text-slate-500">Leadership & Tech Experiences</p>
+                    </div>
+                    <div class="rounded-xl border border-slate-200 bg-slate-50/50 p-3.5 shadow-sm transition-shadow hover:shadow-md">
+                        <p class="tracking-tighter text-xl font-bold text-slate-900">4+</p>
+                        <p class="text-xs text-slate-500">Cloud / Full-Stack Projects</p>
+                    </div>
+                    <div class="rounded-xl border border-slate-200 bg-slate-50/50 p-3.5 shadow-sm transition-shadow hover:shadow-md">
+                        <p class="tracking-tighter text-xl font-bold text-slate-900">2</p>
+                        <p class="text-xs text-slate-500">Technical Certifications</p>
+                    </div>
+                </div>
+                <div id="about" class="mt-3 rounded-xl border border-slate-200 bg-slate-50/50 p-3.5 shadow-sm transition-shadow hover:shadow-md md:p-4">
+                    <p class="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">Professional Summary</p>
+                    <p class="text-sm leading-relaxed text-slate-600 md:text-[15px]">
+                        Third-year Computer Engineering Technology student at PUP specializing in Cloud Engineering and AI Automation. Active leader in GDG and AWS Cloud Club, focusing on architecting scalable serverless solutions and intelligent workflows.
+                    </p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div>
-            <h2 class="text-4xl font-bold text-[#8750f7] font-sora mb-10 flex items-center gap-4">
-                <i class="fa-solid fa-certificate"></i> Certifications
-            </h2>
-            
-            <div class="space-y-6">
-                <div class="p-8 rounded-[24px] bg-[#1a0b2e] border border-transparent hover:border-[#8750f7] transition-all group">
-                    <span class="text-[#8750f7] font-bold text-sm">2025 - 2030</span>
-                    <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-[#8750f7]">Computer System Servicing NCII</h3>
-                    <p class="text-gray-400 mt-1">Southern Luzon Technological College Foundation Inc.</p>
+        <section id="stack" class="pb-8 md:pb-10">
+            <div class="mb-4">
+                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Capabilities</p>
+                <h2 class="tracking-tighter mt-2 text-2xl font-bold text-slate-900 md:text-3xl">Tech Stack</h2>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+                <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">AWS</span>
+                <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">JavaScript</span>
+                <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Python</span>
+                <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Vue 3</span>
+                <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Vite</span>
+                <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">PHP</span>
+                <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">MySQL</span>
+                <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">DynamoDB</span>
+                <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">API Gateway</span>
+                <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">n8n</span>
+                <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">OpenAI GPT-4o-mini</span>
+                <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Google Calendar API</span>
+            </div>
+        </section>
+
+        <section id="projects" class="pb-8 md:pb-10">
+            <div class="mb-5">
+                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Selected Work</p>
+                <h2 class="tracking-tighter mt-2 text-2xl font-bold text-slate-900 md:text-3xl">Technical Projects</h2>
+                <p class="mt-2 max-w-2xl text-sm text-slate-600">
+                    Documentation-focused portfolio of cloud, automation, IoT, and full-stack engineering projects.
+                </p>
+            </div>
+            <div class="grid gap-3.5 md:grid-cols-2">
+                <article class="rounded-xl border border-slate-200 bg-slate-50/50 p-4 shadow-sm transition-shadow hover:shadow-md md:p-5">
+                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Project 1</p>
+                    <h3 class="tracking-tighter mt-1.5 text-xl font-bold text-slate-900">Serverless Service Appointment System</h3>
+                    <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                        Architected a cloud-native appointment workflow using event-driven services for scalable scheduling and service orchestration.
+                    </p>
+                    <div class="mt-3 flex flex-wrap gap-1.5">
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">AWS Lambda</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">DynamoDB</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">API Gateway</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">CloudFront</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">RDS</span>
+                    </div>
+                    <a href="#" class="mt-4 inline-flex text-sm font-semibold text-slate-700 underline underline-offset-4 hover:text-slate-900">View Documentation</a>
+                </article>
+
+                <article class="rounded-xl border border-slate-200 bg-slate-50/50 p-4 shadow-sm transition-shadow hover:shadow-md md:p-5">
+                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Project 2</p>
+                    <h3 class="tracking-tighter mt-1.5 text-xl font-bold text-slate-900">AI Workflow Automation: Smart Calendar Agent</h3>
+                    <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                        Architected AI-driven automation via natural language processing to convert user intent into scheduling actions and calendar workflows.
+                    </p>
+                    <div class="mt-3 flex flex-wrap gap-1.5">
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">n8n</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">OpenAI GPT-4o-mini</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">Google Calendar API</span>
+                    </div>
+                    <a href="#" class="mt-4 inline-flex text-sm font-semibold text-slate-700 underline underline-offset-4 hover:text-slate-900">View Documentation</a>
+                </article>
+
+                <article class="rounded-xl border border-slate-200 bg-slate-50/50 p-4 shadow-sm transition-shadow hover:shadow-md md:p-5">
+                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Project 3</p>
+                    <h3 class="tracking-tighter mt-1.5 text-xl font-bold text-slate-900">Smart Water Dispensing System</h3>
+                    <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                        Built an IoT prototype featuring automated dispensing logic and coin-based access for reliable physical-digital interaction.
+                    </p>
+                    <div class="mt-3 flex flex-wrap gap-1.5">
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">IoT Prototype</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">Automation Logic</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">Embedded Workflow</span>
+                    </div>
+                    <a href="#" class="mt-4 inline-flex text-sm font-semibold text-slate-700 underline underline-offset-4 hover:text-slate-900">View Documentation</a>
+                </article>
+
+                <article class="rounded-xl border border-slate-200 bg-slate-50/50 p-4 shadow-sm transition-shadow hover:shadow-md md:p-5">
+                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Project 4</p>
+                    <h3 class="tracking-tighter mt-1.5 text-xl font-bold text-slate-900">Full-Stack E-Commerce Platform</h3>
+                    <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                        Developed a transactional web platform following SDLC practices, with integrated frontend-backend flows and relational data handling.
+                    </p>
+                    <div class="mt-3 flex flex-wrap gap-1.5">
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">PHP</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">JavaScript</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">SQL</span>
+                        <span class="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-700">SDLC</span>
+                    </div>
+                    <a href="#" class="mt-4 inline-flex text-sm font-semibold text-slate-700 underline underline-offset-4 hover:text-slate-900">View Documentation</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="pb-8 md:pb-10">
+            <div class="grid grid-cols-1 items-stretch gap-6 md:grid-cols-3">
+                <div class="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50/50 p-4 shadow-sm transition-shadow hover:shadow-md">
+                    <div class="mb-4">
+                        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Experience</p>
+                        <h2 class="tracking-tighter mt-1.5 text-lg font-bold text-slate-900">Leadership & Professional Experience</h2>
+                    </div>
+                    <div class="relative pl-6 before:absolute before:left-[7px] before:top-1 before:h-[94%] before:w-px before:bg-slate-200">
+                        <article class="relative mb-3 pb-2">
+                            <span class="absolute -left-6 top-1.5 h-2.5 w-2.5 rounded-full bg-slate-400"></span>
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">2024 - Present</p>
+                            <p class="mt-0.5 text-sm font-semibold text-slate-900">Project Management Associate | GDG ON CAMPUS - PUP</p>
+                            <p class="text-[11px] text-slate-600">Stakeholder Coordination & Strategic Planning.</p>
+                        </article>
+
+                        <article class="relative mb-3 pb-2">
+                            <span class="absolute -left-6 top-1.5 h-2.5 w-2.5 rounded-full bg-slate-400"></span>
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">2025 - Present</p>
+                            <p class="mt-0.5 text-sm font-semibold text-slate-900">Operations Team | AWS CLOUD CLUB - PUP</p>
+                            <p class="text-[11px] text-slate-600">Operational Excellence & Technical Troubleshooting.</p>
+                        </article>
+
+                        <article class="relative mb-3 pb-2">
+                            <span class="absolute -left-6 top-1.5 h-2.5 w-2.5 rounded-full bg-slate-400"></span>
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">Oct 2025 - Jan 2026</p>
+                            <p class="mt-0.5 text-sm font-semibold text-slate-900">Mentee | AWS USER GROUP BUILDHERS+ PH</p>
+                            <p class="text-[11px] text-slate-600">Cloud Architecture Mentorship.</p>
+                        </article>
+
+                        <article class="relative">
+                            <span class="absolute -left-6 top-1.5 h-2.5 w-2.5 rounded-full bg-slate-400"></span>
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">2026</p>
+                            <p class="mt-0.5 text-sm font-semibold text-slate-900">OJT | CUSTOMER FRONTLINE SOLUTIONS</p>
+                            <p class="text-[11px] text-slate-600">Industry Workflow & Automation.</p>
+                        </article>
+                    </div>
                 </div>
 
-                <div class="p-8 rounded-[24px] bg-[#1a0b2e] border border-transparent hover:border-[#8750f7] transition-all group">
-                    <span class="text-[#8750f7] font-bold text-sm">2025 - 2030</span>
-                    <h3 class="text-2xl font-bold text-white mt-2 group-hover:text-[#8750f7]">Mechatronics Servicing NCII</h3>
-                    <p class="text-gray-400 mt-1">Mechatronics Technologies Corporation: Training</p>
-                </div>
+                <aside id="certifications" class="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50/50 p-4 shadow-sm transition-shadow hover:shadow-md">
+                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Certifications</p>
+                    <h3 class="tracking-tighter mt-1.5 text-lg font-bold text-slate-900">Certifications & Training</h3>
+                    <div class="mt-3 space-y-2.5">
+                        <article class="flex items-start gap-2">
+                            <span class="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-slate-300 text-slate-600">
+                                <svg viewBox="0 0 24 24" class="h-2.5 w-2.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg>
+                            </span>
+                            <p class="text-xs leading-snug text-slate-700">KIRO Night Workshop: Modern Web Development with AI-driven Agentic IDEs <span class="text-slate-500">(2026)</span></p>
+                        </article>
+                        <article class="flex items-start gap-2">
+                            <span class="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-slate-300 text-slate-600">
+                                <svg viewBox="0 0 24 24" class="h-2.5 w-2.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.5L12 15.8 7.2 18l.9-5.5L4.2 8.7l5.4-.8L12 3z"></path></svg>
+                            </span>
+                            <p class="text-xs leading-snug text-slate-700">Git Ready to Commit: Git & GitHub Workshop - AWS Cloud Club PUP <span class="text-slate-500">(2025)</span></p>
+                        </article>
+                        <article class="flex items-start gap-2">
+                            <span class="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-slate-300 text-slate-600">
+                                <svg viewBox="0 0 24 24" class="h-2.5 w-2.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="3"></circle><path d="M7 14h10v7l-5-2-5 2v-7z"></path></svg>
+                            </span>
+                            <p class="text-xs leading-snug text-slate-700">TESDA NC II: Computer System Servicing <span class="text-slate-500">(Feb 2025)</span></p>
+                        </article>
+                        <article class="flex items-start gap-2">
+                            <span class="mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-slate-300 text-slate-600">
+                                <svg viewBox="0 0 24 24" class="h-2.5 w-2.5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="3"></circle><path d="M7 14h10v7l-5-2-5 2v-7z"></path></svg>
+                            </span>
+                            <p class="text-xs leading-snug text-slate-700">TESDA NC II: Mechatronics System Servicing <span class="text-slate-500">(Nov 2025)</span></p>
+                        </article>
+                    </div>
+                </aside>
+
+                <aside class="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50/50 p-4 shadow-sm transition-shadow hover:shadow-md">
+                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Community Impact</p>
+                    <div class="mt-3 grid grid-cols-2 gap-2">
+                        <div class="w-full aspect-square bg-slate-50 rounded-xl border border-slate-200"></div>
+                        <div class="w-full aspect-square bg-slate-50 rounded-xl border border-slate-200"></div>
+                        <div class="w-full aspect-square bg-slate-50 rounded-xl border border-slate-200"></div>
+                        <div class="w-full aspect-square bg-slate-50 rounded-xl border border-slate-200"></div>
+                    </div>
+                </aside>
             </div>
-        </div>
-
-    </div>
-</section>
-
-
-<!--MY SKILLS-->
-<section id="skills" class="py-20 bg-[#0f0715] px-[10%] text-center">
-    <h2 class="text-4xl md:text-5xl font-bold text-white font-sora mb-4">My Skills</h2>
-    <p class="text-gray-400 font-inter max-w-2xl mx-auto mb-16">
-        We put your ideas into unique web projects that inspire you and customers.
-    </p>
-
-    <div class="flex flex-wrap justify-center gap-8 md:gap-12">
-        
-        <div class="group flex flex-col items-center">
-            <div class="w-32 h-32 md:w-40 md:h-40 rounded-[32px] bg-[#1a0b2e] border border-transparent group-hover:border-[#8750f7] group-hover:bg-[#2a1454] transition-all duration-300 flex items-center justify-center mb-4">
-                <img src="images/aws.png" alt="AWS" class="w-16 h-16 md:w-20 md:h-20 grayscale group-hover:grayscale-0 transition-all duration-500">
-            </div>
-            <span class="text-[#8750f7] font-bold font-sora">AWS</span>
-        </div>
-
-        <div class="group flex flex-col items-center">
-            <div class="w-32 h-32 md:w-40 md:h-40 rounded-[32px] bg-[#1a0b2e] border border-transparent group-hover:border-[#8750f7] group-hover:bg-[#2a1454] transition-all duration-300 flex items-center justify-center mb-4">
-                <img src="images/js.png" alt="JS" class="w-16 h-16 md:w-20 md:h-20 grayscale group-hover:grayscale-0 transition-all duration-500">
-            </div>
-            <span class="text-[#8750f7] font-bold font-sora">Javascript</span>
-        </div>
-
-        <div class="group flex flex-col items-center">
-            <div class="w-32 h-32 md:w-40 md:h-40 rounded-[32px] bg-[#1a0b2e] border border-transparent group-hover:border-[#8750f7] group-hover:bg-[#2a1454] transition-all duration-300 flex items-center justify-center mb-4">
-                <img src="images/PYTHON.png" alt="JS" class="w-16 h-16 md:w-20 md:h-20 grayscale group-hover:grayscale-0 transition-all duration-500">
-            </div>
-            <span class="text-[#8750f7] font-bold font-sora">Python</span>
-        </div>
-
-        <div class="group flex flex-col items-center">
-            <div class="w-32 h-32 md:w-40 md:h-40 rounded-[32px] bg-[#1a0b2e] border border-transparent group-hover:border-[#8750f7] group-hover:bg-[#2a1454] transition-all duration-300 flex items-center justify-center mb-4">
-                <img src="images/github.png" alt="JS" class="w-16 h-16 md:w-20 md:h-20 grayscale group-hover:grayscale-0 transition-all duration-500">
-            </div>
-            <span class="text-[#8750f7] font-bold font-sora">GitHub</span>
-        </div>
-
-        <div class="group flex flex-col items-center">
-            <div class="w-32 h-32 md:w-40 md:h-40 rounded-[32px] bg-[#1a0b2e] border border-transparent group-hover:border-[#8750f7] group-hover:bg-[#2a1454] transition-all duration-300 flex items-center justify-center mb-4">
-                <img src="images/mysql.png" alt="JS" class="w-16 h-16 md:w-20 md:h-20 grayscale group-hover:grayscale-0 transition-all duration-500">
-            </div>
-            <span class="text-[#8750f7] font-bold font-sora">MySQL</span>
-        </div>
-
-         <div class="group flex flex-col items-center">
-            <div class="w-32 h-32 md:w-40 md:h-40 rounded-[32px] bg-[#1a0b2e] border border-transparent group-hover:border-[#8750f7] group-hover:bg-[#2a1454] transition-all duration-300 flex items-center justify-center mb-4">
-                <img src="images/java.png" alt="JS" class="w-16 h-16 md:w-20 md:h-20 grayscale group-hover:grayscale-0 transition-all duration-500">
-            </div>
-            <span class="text-[#8750f7] font-bold font-sora">Java</span>
-        </div>
-
-
-        <div class="group flex flex-col items-center">
-            <div class="w-32 h-32 md:w-40 md:h-40 rounded-[32px] bg-[#1a0b2e] border border-transparent group-hover:border-[#8750f7] group-hover:bg-[#2a1454] transition-all duration-300 flex items-center justify-center mb-4">
-                <img src="images/php.png" alt="PHP" class="w-16 h-16 md:w-20 md:h-20 grayscale group-hover:grayscale-0 transition-all duration-500">
-            </div>
-            <span class="text-[#8750f7] font-bold font-sora">PHP</span>
-        </div>
-
-        </div>
-</section>
-
-<section id="gallery" class="py-20 bg-[#0f0715] px-[5%] text-center">
-    <h2 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-[#8750f7] font-sora mb-4">Community Gallery</h2>
-
-    <div class="flex md:grid md:grid-cols-7 gap-2 overflow-x-auto md:overflow-visible pb-6 md:pb-0 scrollbar-hide">
-        
-        <div class="min-w-[180px] md:min-w-0 aspect-square overflow-hidden rounded-[25px] md:rounded-[30px] border-2 border-[#8750f7]/30 hover:border-[#8750f7] transition-all shrink-0">
-            <img src="images/cisco.JPG" class="w-full h-full object-cover hover:scale-100 transition-transform duration-500">
-        </div>
-        
-        <div class="min-w-[140px] md:min-w-0 aspect-square overflow-hidden rounded-[25px] md:rounded-[30px] border-2 border-[#8750f7]/30 hover:border-[#8750f7] transition-all shrink-0">
-            <img src="images/buildhers2.JPG" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-        </div>
-        
-        <div class="min-w-[140px] md:min-w-0 aspect-square overflow-hidden rounded-[25px] md:rounded-[30px] border-2 border-[#8750f7]/30 hover:border-[#8750f7] transition-all shrink-0">
-            <img src="images/career.jpg" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-        </div>
-        
-        <div class="min-w-[140px] md:min-w-0 aspect-square overflow-hidden rounded-[25px] md:rounded-[30px] border-2 border-[#8750f7]/30 hover:border-[#8750f7] transition-all shrink-0">
-            <img src="images/kiro1.jpg" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-        </div>
-
-        <div class="min-w-[140px] md:min-w-0 aspect-square overflow-hidden rounded-[25px] md:rounded-[30px] border-2 border-[#8750f7]/30 hover:border-[#8750f7] transition-all shrink-0">
-            <img src="images/solo.jpg" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-        </div>
-
-        <div class="min-w-[140px] md:min-w-0 aspect-square overflow-hidden rounded-[25px] md:rounded-[30px] border-2 border-[#8750f7]/30 hover:border-[#8750f7] transition-all shrink-0">
-            <img src="images/buildhers.JPG" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-        </div>
-
-        <div class="min-w-[140px] md:min-w-0 aspect-square overflow-hidden rounded-[25px] md:rounded-[30px] border-2 border-[#8750f7]/30 hover:border-[#8750f7] transition-all shrink-0">
-            <img src="images/kiro2.jpg" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
-        </div>
-
-    </div>
-</section>
+        </section>
+    </main>
 </body>
 </html>
