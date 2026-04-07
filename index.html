@@ -22,38 +22,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-white text-slate-900 antialiased font-sans">
-    <nav class="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur">
-        <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 md:px-8">
-            <a href="#" class="text-sm font-semibold text-slate-800">mariellelois9@gmail.com</a>
-            <ul class="flex items-center gap-6 text-sm text-slate-600">
+<body class="min-h-[100dvh] overflow-x-hidden bg-white text-slate-900 antialiased font-sans">
+    <nav class="sticky top-0 z-50 border-b border-slate-100 bg-white/90 pt-[max(0.75rem,env(safe-area-inset-top))] backdrop-blur supports-[backdrop-filter]:bg-white/80">
+        <div class="mx-auto flex w-full max-w-6xl flex-col items-center gap-3 pb-3 pl-[max(1rem,env(safe-area-inset-left))] pr-[max(1rem,env(safe-area-inset-right))] md:flex-row md:items-center md:justify-between md:gap-0 md:px-8 md:py-4">
+            <a href="mailto:mariellelois9@gmail.com" class="w-full text-center text-sm font-semibold text-slate-800 md:w-auto md:text-left">mariellelois9@gmail.com</a>
+            <ul class="flex w-full max-w-md flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-slate-600 md:max-w-none md:justify-end">
                 <li><a href="#about" class="hover:text-slate-900 transition-colors">About</a></li>
+                <li><a href="#stack" class="hover:text-slate-900 transition-colors">Tech Stack</a></li>
                 <li><a href="#projects" class="hover:text-slate-900 transition-colors">Projects</a></li>
                 <li><a href="#experience" class="hover:text-slate-900 transition-colors">Experience</a></li>
-                <li><a href="#stack" class="hover:text-slate-900 transition-colors">Tech Stack</a></li>
             </ul>
         </div>
     </nav>
 
-    <main class="mx-auto w-full max-w-5xl px-5 md:px-7">
+    <main class="mx-auto w-full max-w-5xl pb-[max(2.5rem,env(safe-area-inset-bottom))] pl-[max(1rem,env(safe-area-inset-left))] pr-[max(1rem,env(safe-area-inset-right))] md:px-7 md:pb-12">
         <section class="py-8 md:py-10">
             <div class="max-w-3xl">
                 <p class="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-slate-500">Software & Cloud Engineer Portfolio</p>
-                <div class="flex items-center gap-4">
-                    <img src="images/pic.jpg" alt="Marielle profile avatar" class="h-16 w-16 rounded-full border border-slate-200 object-cover md:h-20 md:w-20">
-                    <h1 class="tracking-tighter text-3xl font-extrabold leading-tight text-slate-900 md:text-5xl">
+                <div class="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-4">
+                    <img src="images/pic.jpg" alt="Marielle profile avatar" class="h-16 w-16 shrink-0 rounded-full border border-slate-200 object-cover md:h-20 md:w-20">
+                    <h1 class="min-w-0 tracking-tighter text-3xl font-extrabold leading-tight text-slate-900 md:text-5xl">
                         Marielle Lois P.Bahuyo
                     </h1>
                 </div>
                 <p class="mt-3 max-w-2xl text-base text-slate-600 md:text-lg">
                     Third-year Computer Engineering Technology student focused on cloud engineering, full-stack development, and operationally reliable systems.
                 </p>
-                <div class="mt-4 flex flex-wrap items-center gap-2">
+                <div class="mt-4 flex flex-wrap items-center justify-start gap-2 sm:justify-start">
                     <a href="#" class="rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-semibold text-slate-800 transition hover:border-slate-300 hover:bg-slate-50">Download CV</a>
-                    <a href="https://github.com/vanillamaye" target="_blank" class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-300">GitHub</a>
-                    <a href="https://www.linkedin.com/in/marielleloisbahuyo/" target="_blank" class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-300">LinkedIn</a>
+                    <a href="https://github.com/vanillamaye" target="_blank" rel="noopener noreferrer" class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-300">GitHub</a>
+                    <a href="https://www.linkedin.com/in/marielleloisbahuyo/" target="_blank" rel="noopener noreferrer" class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-300">LinkedIn</a>
                 </div>
-                <div class="mt-4 grid gap-2 sm:grid-cols-3">
+                <div class="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-3">
                     <div class="rounded-xl border border-slate-200 bg-slate-50/50 p-3.5 shadow-sm transition-shadow hover:shadow-md">
                         <p class="tracking-tighter text-xl font-bold text-slate-900">10+</p>
                         <p class="text-xs text-slate-500">Leadership & Tech Experiences</p>
@@ -105,7 +105,7 @@
                     Documentation-focused portfolio of cloud, automation, IoT, and full-stack engineering projects.
                 </p>
             </div>
-            <div class="grid gap-3.5 md:grid-cols-2">
+            <div class="grid grid-cols-1 gap-3.5 md:grid-cols-2">
                 <article class="rounded-xl border border-slate-200 bg-slate-50/50 p-4 shadow-sm transition-shadow hover:shadow-md md:p-5">
                     <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Project 1</p>
                     <h3 class="tracking-tighter mt-1.5 text-xl font-bold text-slate-900">Serverless Service Appointment System</h3>
@@ -238,11 +238,11 @@
 
                 <aside class="flex h-full flex-col rounded-xl border border-slate-200 bg-slate-50/50 p-4 shadow-sm transition-shadow hover:shadow-md">
                     <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Community Impact</p>
-                    <div class="mt-3 grid grid-cols-2 gap-2">
-                        <div class="w-full aspect-square bg-slate-50 rounded-xl border border-slate-200"></div>
-                        <div class="w-full aspect-square bg-slate-50 rounded-xl border border-slate-200"></div>
-                        <div class="w-full aspect-square bg-slate-50 rounded-xl border border-slate-200"></div>
-                        <div class="w-full aspect-square bg-slate-50 rounded-xl border border-slate-200"></div>
+                    <div class="mt-3 grid w-full grid-cols-2 gap-2">
+                        <div class="aspect-square w-full min-w-0 rounded-xl border border-slate-200 bg-slate-50"></div>
+                        <div class="aspect-square w-full min-w-0 rounded-xl border border-slate-200 bg-slate-50"></div>
+                        <div class="aspect-square w-full min-w-0 rounded-xl border border-slate-200 bg-slate-50"></div>
+                        <div class="aspect-square w-full min-w-0 rounded-xl border border-slate-200 bg-slate-50"></div>
                     </div>
                 </aside>
             </div>
